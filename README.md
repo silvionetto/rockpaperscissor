@@ -10,9 +10,9 @@
 
 [Requirement](doc/Requirements.md)
 
-[PMD Report](target/site/pmd.html)
+[PMD Report](http://target/site/pmd.html)
 
-[Check Style](target/site/checkstyle.html)
+[Check Style](http://target/site/checkstyle.html)
 
 ## Usage
 1 - Clone the project:
