@@ -60,7 +60,7 @@ public final class RockPaperScissor {
     }
 
     /**
-     * Print the stati
+     * Print the statistics.
      */
     private void statistics() {
         System.out.print("+");

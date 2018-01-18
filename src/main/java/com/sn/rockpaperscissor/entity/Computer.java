@@ -2,6 +2,9 @@ package com.sn.rockpaperscissor.entity;
 
 import java.util.Random;
 
+/**
+ * This class represents the actions taken by the application.
+ */
 public class Computer {
 
     /**

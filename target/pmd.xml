@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.0.2" timestamp="2018-01-18T23:46:14.747">
+<file name="/Users/silvionetto/IdeaProjects/rockpaperscissor/src/main/java/com/sn/rockpaperscissor/RockPaperScissor.java">
+<violation beginline="24" endline="24" begincolumn="9" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor" class="RockPaperScissor" method="start" variable="userChoice" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'userChoice' could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="9" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor" class="RockPaperScissor" method="start" variable="computerChoice" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'computerChoice' could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor" class="RockPaperScissor" method="checkResult" variable="compare" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'compare' could be declared final
+</violation>
+<violation beginline="66" endline="66" begincolumn="26" endcolumn="28" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer" package="com.sn.rockpaperscissor" class="RockPaperScissor" method="statistics" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;+&quot; appears 8 times in this file; the first occurrence is on line 66
+</violation>
+<violation beginline="85" endline="85" begincolumn="9" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor" class="RockPaperScissor" method="statistics" variable="percentage" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'percentage' could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="29" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor" class="RockPaperScissor" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="111" endline="111" begincolumn="9" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor" class="RockPaperScissor" method="main" variable="app" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'app' could be declared final
+</violation>
+</file>
+<file name="/Users/silvionetto/IdeaProjects/rockpaperscissor/src/main/java/com/sn/rockpaperscissor/entity/Computer.java">
+<violation beginline="16" endline="16" begincolumn="9" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor.entity" class="Computer" method="form" variable="shapes" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shapes' could be declared final
+</violation>
+<violation beginline="17" endline="17" begincolumn="9" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor.entity" class="Computer" method="form" variable="random" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'random' could be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="9" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor.entity" class="Computer" method="form" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+</file>
+<file name="/Users/silvionetto/IdeaProjects/rockpaperscissor/src/main/java/com/sn/rockpaperscissor/entity/User.java">
+<violation beginline="45" endline="45" begincolumn="9" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="com.sn.rockpaperscissor.entity" class="User" method="playAgain" variable="input" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'input' could be declared final
+</violation>
+</file>
+</pmd>

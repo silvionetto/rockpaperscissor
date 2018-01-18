@@ -3,16 +3,22 @@ package com.sn.rockpaperscissor.entity;
 import java.io.InputStream;
 import java.util.Scanner;
 
+/**
+ * This class represents the user and his interaction in the system.
+ */
 public class User {
+    /**
+     * Receive the input from the user.
+     */
     private final Scanner inputScanner;
 
     /**
      * Constructor receive System.in.
      *
-     * @param input
+     * @param input {@link InputStream}
      */
-    public User(InputStream input) {
-      inputScanner = new Scanner(input);
+    public User(final InputStream input) {
+        inputScanner = new Scanner(input);
     }
 
     /**
