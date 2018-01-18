@@ -10,9 +10,9 @@
 
 [Requirement](doc/Requirements.md)
 
-[PMD Report](http://target/site/pmd.html)
+[PMD Report](http://htmlpreview.github.com/?https://github.com/silvionetto/rockpaperscissor/blob/master/target/site/pmd.html)
 
-[Check Style](http://target/site/checkstyle.html)
+[Check Style](http://htmlpreview.github.com/?https://github.com/silvionetto/rockpaperscissor/blob/master/target/site/checkstyle.html)
 
 ## Usage
 1 - Clone the project:
