@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Line.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rockpaperscissor</a> &gt; <a href="index.source.html" class="el_package">com.sn.rockpaperscissor.enums</a> &gt; <span class="el_source">Line.java</span></div><h1>Line.java</h1><pre class="source lang-java linenums">package com.sn.rockpaperscissor.enums;
+
+/**
+ * Define the line used in the statistics.
+ * &lt;ul&gt;
+ * &lt;li&gt;{@link #START}&lt;/li&gt;
+ * &lt;li&gt;{@link #END}&lt;/li&gt;
+ * &lt;li&gt;{@link #INTERSECTION}&lt;/li&gt;
+ * &lt;/ul&gt;
+ */
+<span class="nc" id="L11">public enum Line {</span>
+
+    /**
+     * Character representing the start line.
+     */
+<span class="nc" id="L16">    START(&quot;|&quot;),</span>
+
+    /**
+     * Character representing the end line.
+     */
+<span class="nc" id="L21">    END(&quot;|&quot;),</span>
+
+    /**
+     * Character representing the intersection.
+     */
+<span class="nc" id="L26">    INTERSECTION(&quot;+&quot;);</span>
+
+    /**
+     * Character used to represent each attribute of line.
+     */
+    private String character;
+
+    /**
+     * Size of the line.
+     */
+<span class="nc" id="L36">    private final Integer size = 73;</span>
+
+    /**
+     * To create an instance of Line is necessary to inform wich character.
+     *
+     * @param character to be used in the attribute of line
+     */
+<span class="nc" id="L43">    Line(final String character) {</span>
+<span class="nc" id="L44">        this.character = character;</span>
+<span class="nc" id="L45">    }</span>
+
+    /**
+     * Get the character used to represent the attribute.
+     *
+     * @return a character.
+     */
+    public String getCharacter() {
+<span class="nc" id="L53">        return character;</span>
+    }
+
+    /**
+     * Get the size of the line.
+     *
+     * @return the size of the line.
+     */
+    public Integer getSize() {
+<span class="nc" id="L62">        return size;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

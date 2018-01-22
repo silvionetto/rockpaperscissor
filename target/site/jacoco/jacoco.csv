@@ -1,0 +1,10 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+rockpaperscissor,com.sn.rockpaperscissor,RockPaperScissor.new Object() {...},26,0,0,0,1,0,1,0,1,0
+rockpaperscissor,com.sn.rockpaperscissor,RockPaperScissor,300,0,10,0,60,0,13,0,7,0
+rockpaperscissor,com.sn.rockpaperscissor.entity,Computer,0,18,0,0,0,5,0,2,0,2
+rockpaperscissor,com.sn.rockpaperscissor.entity,User,0,31,0,2,0,13,0,3,0,2
+rockpaperscissor,com.sn.rockpaperscissor.enums,Result,0,39,0,0,0,4,0,2,0,2
+rockpaperscissor,com.sn.rockpaperscissor.enums,Shape,3,81,1,11,1,21,1,9,0,3
+rockpaperscissor,com.sn.rockpaperscissor.enums,Column,75,0,0,0,10,0,3,0,3,0
+rockpaperscissor,com.sn.rockpaperscissor.enums,Line,55,0,0,0,10,0,4,0,4,0
+rockpaperscissor,com.sn.rockpaperscissor.enums,Shape.new Object() {...},3,23,0,0,0,1,0,1,0,1

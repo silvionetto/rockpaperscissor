@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RockPaperScissor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rockpaperscissor</a> &gt; <a href="index.source.html" class="el_package">com.sn.rockpaperscissor</a> &gt; <span class="el_source">RockPaperScissor.java</span></div><h1>RockPaperScissor.java</h1><pre class="source lang-java linenums">package com.sn.rockpaperscissor;
+
+import com.sn.rockpaperscissor.entity.Computer;
+import com.sn.rockpaperscissor.entity.Player;
+import com.sn.rockpaperscissor.enums.Column;
+import com.sn.rockpaperscissor.enums.Line;
+import com.sn.rockpaperscissor.enums.Result;
+import com.sn.rockpaperscissor.enums.Shape;
+import com.sn.rockpaperscissor.entity.User;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.util.Scanner;
+
+/**
+ * This class represents the java application to run an instance of the game.
+ */
+public final class RockPaperScissor {
+
+    /**
+     * Receive the input from the user.
+     */
+    private final Scanner inputScanner;
+
+    /**
+     * The user in the game.
+     */
+<span class="nc" id="L28">    private final Player user = new User(System.in);</span>
+
+    /**
+     * The computer in the game.
+     */
+<span class="nc" id="L33">    private final Player computer = new Computer();</span>
+
+    /**
+     * The user's score.
+     */
+    private int userScore;
+
+    /**
+     * The computer's score.
+     */
+    private int computerScore;
+
+    /**
+     * The number of ties in the game.
+     */
+    private int ties;
+
+    /**
+     * The number of matches.
+     */
+    private int count;
+
+    /**
+     * Constructor receive System.in.
+     *
+     * @param input {@link InputStream}
+     */
+<span class="nc" id="L60">    public RockPaperScissor(final InputStream input) {</span>
+<span class="nc" id="L61">        inputScanner = new Scanner(input);</span>
+<span class="nc" id="L62">    }</span>
+
+    /**
+     * Start game!
+     */
+    private void start() {
+<span class="nc" id="L68">        final Shape userChoice = user.form();</span>
+<span class="nc" id="L69">        final Shape computerChoice = computer.form();</span>
+<span class="nc" id="L70">        System.out.printf(&quot;You chose %s\n&quot;, userChoice);</span>
+<span class="nc" id="L71">        System.out.printf(&quot;The computer chose %s\n&quot;, computerChoice);</span>
+<span class="nc" id="L72">        checkResult(userChoice, computerChoice);</span>
+<span class="nc bnc" id="L73" title="All 2 branches missed.">        if (playAgain()) {</span>
+<span class="nc" id="L74">            System.out.println(&quot;&quot;);</span>
+<span class="nc" id="L75">            start();</span>
+        } else {
+<span class="nc" id="L77">            statistics();</span>
+        }
+<span class="nc" id="L79">    }</span>
+
+    /**
+     * The game should repeat.
+     * The command to exit the game is 'N'.
+     *
+     * @return false just if the user press 'N'
+     */
+    private final boolean playAgain() {
+<span class="nc" id="L88">        System.out.println(&quot;Do you want to play again?\n[Y]/N&quot;);</span>
+<span class="nc" id="L89">        final String input = inputScanner.nextLine();</span>
+<span class="nc bnc" id="L90" title="All 2 branches missed.">        return !&quot;N&quot;.equalsIgnoreCase(input);</span>
+    }
+
+    /**
+     * Check the result of the match.
+     *
+     * @param userChoice     the shape chosen by the user
+     * @param computerChoice the shape chosen by the computer
+     */
+    private void checkResult(final Shape userChoice,
+                             final Shape computerChoice) {
+<span class="nc" id="L101">        final Result result = userChoice.compare(computerChoice);</span>
+<span class="nc bnc" id="L102" title="All 4 branches missed.">        switch (result) {</span>
+            case TIE:
+<span class="nc" id="L104">                System.out.println(&quot;The game is tied!&quot;);</span>
+<span class="nc" id="L105">                ties++;</span>
+<span class="nc" id="L106">                break;</span>
+            case WIN:
+<span class="nc" id="L108">                System.out.println(&quot;You won!&quot;);</span>
+<span class="nc" id="L109">                userScore++;</span>
+<span class="nc" id="L110">                break;</span>
+            case LOSE:
+<span class="nc" id="L112">                System.out.println(&quot;You lose!&quot;);</span>
+<span class="nc" id="L113">                computerScore++;</span>
+<span class="nc" id="L114">                break;</span>
+            default:
+<span class="nc" id="L116">                System.out.println(&quot;Error checking results.&quot;);</span>
+        }
+<span class="nc" id="L118">        count++;</span>
+<span class="nc" id="L119">    }</span>
+
+    /**
+     * Print the statistics.
+     */
+    private void statistics() {
+<span class="nc" id="L125">        System.out.print(Line.INTERSECTION.getCharacter());</span>
+<span class="nc" id="L126">        printDashes(Line.START.getSize());</span>
+<span class="nc" id="L127">        System.out.println(Line.INTERSECTION.getCharacter());</span>
+
+<span class="nc" id="L129">        System.out.printf(&quot;|  %6s  |  %6s  |  %6s  |  %12s  |  %14s  |\n&quot;,</span>
+                &quot;Wins&quot;, &quot;Defeats&quot;, &quot;Ties&quot;, &quot;Games Played&quot;,
+                &quot;Winning Percentage&quot;);
+
+<span class="nc" id="L133">        System.out.print(Line.START.getCharacter());</span>
+<span class="nc" id="L134">        printDashes(Column.ONE.getSize());</span>
+<span class="nc" id="L135">        System.out.print(Line.INTERSECTION.getCharacter());</span>
+<span class="nc" id="L136">        printDashes(Column.TWO.getSize());</span>
+<span class="nc" id="L137">        System.out.print(Line.INTERSECTION.getCharacter());</span>
+<span class="nc" id="L138">        printDashes(Column.THREE.getSize());</span>
+<span class="nc" id="L139">        System.out.print(Line.INTERSECTION.getCharacter());</span>
+<span class="nc" id="L140">        printDashes(Column.FOUR.getSize());</span>
+<span class="nc" id="L141">        System.out.print(Line.INTERSECTION.getCharacter());</span>
+<span class="nc" id="L142">        printDashes(Column.FIVE.getSize());</span>
+<span class="nc" id="L143">        System.out.println(Line.END.getCharacter());</span>
+
+<span class="nc" id="L145">        final double percentage = (userScore + ((double) ties) / 2) / count;</span>
+<span class="nc" id="L146">        System.out.printf(&quot;|  %6d  |  %6d   |  %6d  |  %12d  |  %13.2f%%      |\n&quot;,</span>
+<span class="nc" id="L147">                userScore, computerScore, ties, count, percentage * 100);</span>
+
+<span class="nc" id="L149">        System.out.print(Line.INTERSECTION.getCharacter());</span>
+<span class="nc" id="L150">        printDashes(Line.END.getSize());</span>
+<span class="nc" id="L151">        System.out.println(Line.INTERSECTION.getCharacter());</span>
+<span class="nc" id="L152">    }</span>
+
+    /**
+     * Print dashes multiple times.
+     *
+     * @param quantity the number of dashes to be printed
+     */
+    private void printDashes(final int quantity) {
+<span class="nc bnc" id="L160" title="All 2 branches missed.">        for (int i = 0; i &lt; quantity; i++) {</span>
+<span class="nc" id="L161">            System.out.print(&quot;-&quot;);</span>
+        }
+<span class="nc" id="L163">    }</span>
+
+    /**
+     * Start application.
+     *
+     * @param args No arguments are necessary
+     */
+    public static void main(final String... args) {
+<span class="nc" id="L171">        final RockPaperScissor app = new RockPaperScissor(System.in);</span>
+<span class="nc" id="L172">        app.start();</span>
+<span class="nc" id="L173">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

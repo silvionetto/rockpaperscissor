@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Column.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">rockpaperscissor</a> &gt; <a href="index.source.html" class="el_package">com.sn.rockpaperscissor.enums</a> &gt; <span class="el_source">Column.java</span></div><h1>Column.java</h1><pre class="source lang-java linenums">package com.sn.rockpaperscissor.enums;
+
+/**
+ * Define the column sizes used in the statistics.
+ * &lt;ul&gt;
+ * &lt;li&gt;{@link #ONE}&lt;/li&gt;
+ * &lt;li&gt;{@link #TWO}&lt;/li&gt;
+ * &lt;li&gt;{@link #THREE}&lt;/li&gt;
+ * &lt;li&gt;{@link #FOUR}&lt;/li&gt;
+ * &lt;li&gt;{@link #FIVE}&lt;/li&gt;
+ * &lt;/ul&gt;
+ */
+<span class="nc" id="L13">public enum Column {</span>
+
+    /**
+     * Column one.
+     */
+<span class="nc" id="L18">    ONE(10),</span>
+
+    /***
+     * Column two.
+     */
+<span class="nc" id="L23">    TWO(11),</span>
+
+    /**
+     * Column three.
+     */
+<span class="nc" id="L28">    THREE(10),</span>
+
+    /**
+     * Column four.
+     */
+<span class="nc" id="L33">    FOUR(16),</span>
+
+    /**
+     * Column five.
+     */
+<span class="nc" id="L38">    FIVE(22);</span>
+
+    /**
+     * The size of the column.
+     */
+    private final Integer size;
+
+    /**
+     * To create an instance of Column is necessary to inform the size.
+     *
+     * @param size the size of the column
+     */
+<span class="nc" id="L50">    Column(final Integer size) {</span>
+<span class="nc" id="L51">        this.size = size;</span>
+<span class="nc" id="L52">    }</span>
+
+    /**
+     * Get the size of the column.
+     *
+     * @return {@link Integer} size.
+     */
+    public Integer getSize() {
+<span class="nc" id="L60">        return size;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>

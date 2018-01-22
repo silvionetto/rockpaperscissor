@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"com.sn.rockpaperscissor"},{"l":"com.sn.rockpaperscissor.entity"},{"l":"com.sn.rockpaperscissor.enums"}]
