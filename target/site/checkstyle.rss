@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018</copyright>
     <item>
-      <title>File: 4,
-             Errors: 31,
+      <title>File: 11,
+             Errors: 8,
              Warnings: 0,
              Infos: 0
       </title>
@@ -46,21 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.entity.User.java">com/sn/rockpaperscissor/entity/User.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.entity.Computer.java">com/sn/rockpaperscissor/entity/Computer.java</a>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.enums.Column.java">com/sn/rockpaperscissor/enums/Column.java</a>
                 </td>
                 <td>
                   0
@@ -74,6 +60,118 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.entity.package-info.java">com/sn/rockpaperscissor/entity/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.entity.User.java">com/sn/rockpaperscissor/entity/User.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.entity.Computer.java">com/sn/rockpaperscissor/entity/Computer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.enums.Shape.java">com/sn/rockpaperscissor/enums/Shape.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.entity.Player.java">com/sn/rockpaperscissor/entity/Player.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.enums.package-info.java">com/sn/rockpaperscissor/enums/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.enums.Result.java">com/sn/rockpaperscissor/enums/Result.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.package-info.java">com/sn/rockpaperscissor/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.RockPaperScissor.java">com/sn/rockpaperscissor/RockPaperScissor.java</a>
                 </td>
                 <td>
@@ -83,12 +181,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  20
+                  4
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.entity.Shape.java">com/sn/rockpaperscissor/entity/Shape.java</a>
+                  <a href="${project.url}/checkstyle.html#com.sn.rockpaperscissor.enums.Line.java">com/sn/rockpaperscissor/enums/Line.java</a>
                 </td>
                 <td>
                   0
@@ -97,7 +195,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  8
+                  1
                 </td>
               </tr>
                       </tbody>

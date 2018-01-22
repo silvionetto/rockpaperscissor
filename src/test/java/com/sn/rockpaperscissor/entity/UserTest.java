@@ -1,5 +1,6 @@
 package com.sn.rockpaperscissor.entity;
 
+import com.sn.rockpaperscissor.enums.Shape;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -12,23 +13,26 @@ public class UserTest {
 
     @Test
     public void test_form_rock() {
-        System.setIn(new ByteArrayInputStream("Rock".getBytes()));
-        user = new User(System.in);
+        user = new User(new ByteArrayInputStream("Rock".getBytes()));
         assertEquals(Shape.ROCK, user.form());
     }
 
     @Test
     public void test_form_paper() {
-        System.setIn(new ByteArrayInputStream("Paper".getBytes()));
-        user = new User(System.in);
+        user = new User(new ByteArrayInputStream("Paper".getBytes()));
         assertEquals(Shape.PAPER, user.form());
     }
 
 
     @Test
     public void test_form_scissor() {
-        System.setIn(new ByteArrayInputStream("Scissor".getBytes()));
-        user = new User(System.in);
+        user = new User(new ByteArrayInputStream("Scissor".getBytes()));
+        assertEquals(Shape.SCISSOR, user.form());
+    }
+
+    @Test
+    public void test_form_wrong() {
+        user = new User(new ByteArrayInputStream("Test\nScissor".getBytes()));
         assertEquals(Shape.SCISSOR, user.form());
     }
 }

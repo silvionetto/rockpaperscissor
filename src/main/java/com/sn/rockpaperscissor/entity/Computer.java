@@ -1,21 +1,19 @@
 package com.sn.rockpaperscissor.entity;
 
+import com.sn.rockpaperscissor.enums.Shape;
+
 import java.util.Random;
 
 /**
  * This class represents the actions taken by the application.
  */
-public class Computer {
+public class Computer implements Player {
 
-    /**
-     * Forms one of three shapes.
-     *
-     * @return {@link Shape} in a random order.
-     */
-    public Shape form() {
-        Shape[] shapes = Shape.values();
-        Random random = new Random();
-        int i = random.nextInt(shapes.length);
+    @Override
+    public final Shape form() {
+        final Shape[] shapes = Shape.values();
+        final Random random = new Random();
+        final int i = random.nextInt(shapes.length);
         return shapes[i];
     }
 

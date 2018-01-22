@@ -1,12 +1,14 @@
 package com.sn.rockpaperscissor.entity;
 
+import com.sn.rockpaperscissor.enums.Shape;
+
 import java.io.InputStream;
 import java.util.Scanner;
 
 /**
  * This class represents the user and his interaction in the system.
  */
-public class User {
+public class User implements Player {
     /**
      * Receive the input from the user.
      */
@@ -27,22 +29,20 @@ public class User {
      * @return the shape chosen by the user
      */
     public Shape form() {
-        System.out.println("Rock, Paper or Scissor?");
+        Shape shape = null;
+        do {
+            System.out.println("Rock, Paper or Scissor?");
 
-        String input = inputScanner.nextLine();
-        input = input.toUpperCase();
-        return Shape.valueOf(input);
+            String input = inputScanner.nextLine();
+            input = input.toUpperCase();
+            try {
+                shape = Shape.valueOf(input);
+            } catch (IllegalArgumentException e) {
+                continue;
+            }
+        } while (shape == null);
+
+        return shape;
     }
 
-    /**
-     * The game should repeat.
-     * The command to exit the game is 'N'.
-     *
-     * @return false just if the user press 'N'
-     */
-    public boolean playAgain() {
-        System.out.println("Do you want to play again?\n[Y]/N");
-        String input = inputScanner.nextLine();
-        return !"N".equalsIgnoreCase(input);
-    }
 }

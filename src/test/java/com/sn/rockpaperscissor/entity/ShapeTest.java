@@ -1,5 +1,7 @@
 package com.sn.rockpaperscissor.entity;
 
+import com.sn.rockpaperscissor.enums.Result;
+import com.sn.rockpaperscissor.enums.Shape;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -12,13 +14,13 @@ public class ShapeTest {
         shape = Shape.ROCK;
 
         Shape rock = Shape.ROCK;
-        assertEquals(0, shape.compare(rock));
+        assertEquals(Result.TIE, shape.compare(rock));
 
         Shape paper = Shape.PAPER;
-        assertEquals(-1, shape.compare(paper));
+        assertEquals(Result.LOSE, shape.compare(paper));
 
         Shape scissor = Shape.SCISSOR;
-        assertEquals(1, shape.compare(scissor));
+        assertEquals(Result.WIN, shape.compare(scissor));
     }
 
     @Test
@@ -26,13 +28,13 @@ public class ShapeTest {
         shape = Shape.PAPER;
 
         Shape rock = Shape.ROCK;
-        assertEquals(1, shape.compare(rock));
+        assertEquals(Result.WIN, shape.compare(rock));
 
         Shape paper = Shape.PAPER;
-        assertEquals(0, shape.compare(paper));
+        assertEquals(Result.TIE, shape.compare(paper));
 
         Shape scissor = Shape.SCISSOR;
-        assertEquals(-1, shape.compare(scissor));
+        assertEquals(Result.LOSE, shape.compare(scissor));
     }
 
     @Test
@@ -40,12 +42,12 @@ public class ShapeTest {
         shape = Shape.SCISSOR;
 
         Shape rock = Shape.ROCK;
-        assertEquals(-1, shape.compare(rock));
+        assertEquals(Result.LOSE, shape.compare(rock));
 
         Shape paper = Shape.PAPER;
-        assertEquals(1, shape.compare(paper));
+        assertEquals(Result.WIN, shape.compare(paper));
 
         Shape scissor = Shape.SCISSOR;
-        assertEquals(0, shape.compare(scissor));
+        assertEquals(Result.TIE, shape.compare(scissor));
     }
 }
