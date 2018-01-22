@@ -39,7 +39,6 @@
 ## Test
 
     mvn test
-    mvn cobertura:coberturapri
 
 ## Quality Assurance
 
