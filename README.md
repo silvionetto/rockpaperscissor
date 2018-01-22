@@ -30,7 +30,7 @@
     
 3 - To run the application using java:
     
-    java -jar target/rockpaperscissor-1.0-SNAPSHOT-jar-with-dependencies.jar
+    java -jar target/rockpaperscissor-1.1-SNAPSHOT-jar-with-dependencies.jar
     
 ## Build
 
