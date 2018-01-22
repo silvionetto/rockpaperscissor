@@ -25,9 +25,7 @@
 <file name="/Users/silvionetto/IdeaProjects/rockpaperscissor/src/main/java/com/sn/rockpaperscissor/package-info.java">
 </file>
 <file name="/Users/silvionetto/IdeaProjects/rockpaperscissor/src/main/java/com/sn/rockpaperscissor/RockPaperScissor.java">
-<error line="11" column="8" severity="error" message="Unused import - java.io.ByteArrayInputStream." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
-<error line="87" column="13" severity="error" message="Redundant &apos;final&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="146" severity="error" message="Line is longer than 80 characters (found 83)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="147" column="69" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="145" severity="error" message="Line is longer than 80 characters (found 83)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="146" column="69" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 </checkstyle>

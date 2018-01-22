@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="com.sn.rockpaperscissor.entity.ShapeTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="com.sn.rockpaperscissor.entity.ShapeTest" time="0.008" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.3.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,7 +63,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.sn.rockpaperscissor.entity.ShapeTest" name="test_compare_paper" time="0.002"/>
+  <testcase classname="com.sn.rockpaperscissor.entity.ShapeTest" name="test_compare_paper" time="0.008"/>
   <testcase classname="com.sn.rockpaperscissor.entity.ShapeTest" name="test_compare_rock" time="0"/>
   <testcase classname="com.sn.rockpaperscissor.entity.ShapeTest" name="test_compare_scissor" time="0"/>
 </testsuite>
