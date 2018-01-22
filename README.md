@@ -26,7 +26,7 @@
     
 2 - To run the application using maven:
 
-    mvn exec:java
+    mvn clean compile exec:java
     
 3 - To run the application using java:
     
